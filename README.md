@@ -18,8 +18,17 @@ Allows users to add, complete, and delete tasks.
 
 ## ▶️ Getting Started
 1. Clone the repo:
+```bash
 git clone https://github.com/BrainOverfl0w/To-Do-List-App-ASP.NET-Core-MVC.git
 cd Todoapp
-3. Run the app:
+```
+
+2. Run the app:
+```bash
 dotnet run
-4. Open your browser: `http://localhost:5162`
+```
+
+3. Open your browser:
+```bash
+http://localhost:5162
+```
