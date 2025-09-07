@@ -19,7 +19,8 @@ Allows users to add, complete, and delete tasks.
 ## ▶️ Getting Started
 1. Clone the repo:
 git clone https://github.com/BrainOverfl0w/To-Do-List-App-ASP.NET-Core-MVC.git
+
 cd Todoapp
-2. Run the app:
+3. Run the app:
 dotnet run
-3. Open your browser: `http://localhost:5162`
+4. Open your browser: `http://localhost:5162`
