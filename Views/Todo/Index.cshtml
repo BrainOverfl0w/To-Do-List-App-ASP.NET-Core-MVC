@@ -1,0 +1,26 @@
+@model IEnumerable<TodoApp.Models.TodoItem>
+
+<h2>My To-Do List</h2>
+<a class="btn btn-primary" href="/Todo/Create">Add Task</a>
+
+<table class="table mt-3">
+    <tr>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+@foreach(var task in Model)
+{
+    <tr>
+        <td>@task.Title</td>
+        <td>@(task.IsComplete ? "✅ Done" : "⏳ Pending")</td>
+        <td>
+            @if (!task.IsComplete)
+            {
+                <a class="btn btn-success btn-sm" href="/Todo/Complete/@task.Id">Complete</a>
+            }
+            <a class="btn btn-danger btn-sm" href="/Todo/Delete/@task.Id">Delete</a>
+        </td>
+    </tr>
+}
+</table>
